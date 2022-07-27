@@ -1,0 +1,21 @@
+﻿<Window x:Class="ThesisDiscussForumV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThesisDiscussForumV2"
+        mc:Ignorable="d"
+        Title="Thesis Discussion Forum" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Background="#FFE74635">
+    <Grid Background="#FFE74635">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="start_img" Margin="-87,-178,386,-70" Source="start.png" Stretch="Fill"/>
+        <Button x:Name="gologin_btn" Content="Login" HorizontalAlignment="Left" Margin="741,359,0,0" VerticalAlignment="Top" Width="459" Height="140" FontFamily="Century Gothic" FontWeight="Bold" FontSize="72" Background="#FF57342F" Foreground="#FFECCA55" Click="Gologin_btn_Click"/>
+        <Button x:Name="gosignup_btn" Content="Sign Up" HorizontalAlignment="Left" Margin="741,160,0,0" VerticalAlignment="Top" Width="459" Height="140" FontFamily="Century Gothic" FontWeight="Bold" FontSize="72" Background="#FF57342F" Foreground="#FFECCA55" Click="Gosignup_btn_Click"/>
+        <Label x:Name="start_lbl" Content="Thesis Discussion Forum" HorizontalAlignment="Left" Margin="101,566,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="48" FontStyle="Italic" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="ThesisDiscussForumV2.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThesisDiscussForumV2"
+        mc:Ignorable="d"
+        Title="Thesis Discussion Forum" Height="720" Width="1280" Background="#FFE74635" Loaded="Window_Loaded" Icon="start.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <GroupBox x:Name="body_gbox" Header="" HorizontalAlignment="Left" Height="511" Margin="0,178,0,0" VerticalAlignment="Top" Width="1272" Background="White">
+            <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="390" Margin="272,87,0,0" VerticalAlignment="Top" RowHeight="30" ColumnWidth="100" Width="970" Background="#FFE0DEDE" CanUserResizeColumns="False" CanUserReorderColumns="False" GridLinesVisibility="Horizontal" IsSynchronizedWithCurrentItem="True" FontFamily="Century Gothic" FontSize="16" IsReadOnly="True" SelectionMode="Single"/>
+        </GroupBox>
+        <GroupBox x:Name="groupBox" Header="" HorizontalAlignment="Left" Height="270" Margin="18,202,0,0" VerticalAlignment="Top" Width="214" Background="#FFE0DEDE">
+            <Button x:Name="logout_btn" Content="Log Out" HorizontalAlignment="Left" Height="58" Margin="24,170,0,0" VerticalAlignment="Top" Width="162" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Click="Logout_btn_Click" Background="#FF4C485B" Foreground="#FFE0C990"/>
+        </GroupBox>
+        <Button x:Name="bookmark_btn" Content="Bookmarks" HorizontalAlignment="Left" Height="58" Margin="46,306,0,0" VerticalAlignment="Top" Width="162" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Background="#FF4C485B" Foreground="White" Click="Bookmarks_btn_Click"/>
+        <Button x:Name="profile_btn" Content="Profile" HorizontalAlignment="Left" Height="58" Margin="46,228,0,0" VerticalAlignment="Top" Width="162" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Background="#FF4C485B" Foreground="White" Click="Profile_btn_Click"/>
+        <Label x:Name="start_lbl" Content="Welcome to the Thesis Discussion Forum!" HorizontalAlignment="Left" Margin="18,88,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="48" FontStyle="Italic" FontWeight="Bold" Width="1014"/>
+        <Rectangle Fill="#FF57342F" HorizontalAlignment="Left" Height="76" Stroke="Black" VerticalAlignment="Top" Width="1274"/>
+        <Button x:Name="post_btn" Content="Create Post" HorizontalAlignment="Left" Height="58" Margin="651,202,0,0" VerticalAlignment="Top" Width="180" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Background="#FF4C485B" Foreground="White" Click="Post_btn_Click"/>
+        <Button x:Name="refresh_btn" Content="Refresh Posts" Height="58" Margin="1065,202,29,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Background="#FF4C485B" Foreground="White" Click="Refresh_btn_Click"/>
+
+    </Grid>
+</Window>

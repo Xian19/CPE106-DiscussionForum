@@ -1,0 +1,25 @@
+﻿<Window x:Class="ThesisDiscussForumV2.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThesisDiscussForumV2"
+        mc:Ignorable="d"
+        Title="Thesis Discussion Forum" Height="715" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="IndianRed" Loaded="Window_Loaded">
+    <Grid Background="#FFE74635">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="start_img" Margin="-87,-178,386,-75" Source="start.png" Stretch="Fill"/>
+        <Label x:Name="start_lbl" Content="Thesis Discussion Forum" HorizontalAlignment="Left" Margin="101,566,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="48" FontStyle="Italic" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Login" HorizontalAlignment="Left" Margin="888,113,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="72" FontStyle="Italic" FontWeight="Bold" Foreground="#FFFFC635"/>
+        <TextBox x:Name="name_tbox" HorizontalAlignment="Left" Height="55" Margin="793,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="404" FontFamily="Century Gothic" FontSize="48" AllowDrop="True"/>
+        <Label x:Name="start_lbl_Copy" Content="Username" HorizontalAlignment="Left" Margin="793,238,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
+        <Label x:Name="start_lbl_Copy1" Content="Password" HorizontalAlignment="Left" Margin="793,356,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
+        <Button x:Name="login_btn" Content="Login" HorizontalAlignment="Left" Margin="888,491,0,0" VerticalAlignment="Top" Width="220" Height="74" FontFamily="Century Gothic" FontWeight="Bold" FontSize="48" Background="#FF57342F" Foreground="#FFECCA55" Click="Login_btn_Click"/>
+        <Button x:Name="back_btn" Content="Back" HorizontalAlignment="Left" Margin="888,580,0,0" VerticalAlignment="Top" Width="220" Height="74" FontFamily="Century Gothic" FontWeight="Bold" FontSize="48" Background="#FF57342F" Foreground="#FFECCA55" Click="Back_btn_Click"/>
+        <PasswordBox x:Name="pass_tbox" HorizontalAlignment="Left" Margin="793,410,0,0" VerticalAlignment="Top" Height="55" Width="404" FontFamily="Century Gothic" FontStyle="Italic" FontSize="48"/>
+
+    </Grid>
+</Window>
